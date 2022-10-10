@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Library Management System {% endblock %}
+{% block css %}
+{% endblock %}
+{% block body %}
+<div class="p-4 bg-light col-lg-12">
+    <div class="container-fluid py-3 ">
+      <h1 class="display-5 fw-bold">Welcome to Library Management System</h1>
+      <p class="col-md-8 fs-4 "> You will be able to issue any book thorugh the admin. After that you need to return the book within 30 days or you can renew the same book for another 30 days but only once else a fine of Rs 5 will be charged per day till the book is returned.</p>
+      
+    </div>
+    <br>
+    <div class="container">
+  <div class="row">
+
+    <div class="col-lg-6">
+      <img src="{% static 'admin1.png' %}" width="50%" height="50%" alt=""><br><br>
+        <a class="btn btn-outline-primary btn-lg" style="text-align:center" href="/admin_login/">Admin Login</a>
+    </div>
+
+    <div class="col-lg-6">
+      <img src="{% static 'user.jpeg' %}" width="50%" height="50%" alt=""><br><br>
+      <a class="btn btn-outline-primary btn-lg" href="/student_login/">Student Login</a>
+      <a href="/student_registration/" class="btn btn-outline-primary btn-lg">Enroll As Student</a>
+    </div>
+  </div>
+  </div>
+</div>
+{% endblock %}
